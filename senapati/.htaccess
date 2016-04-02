@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^.*$ ./index.php
+php_value date.timezone "Asia/Pontianak"
+Options -Indexes
